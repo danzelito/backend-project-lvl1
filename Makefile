@@ -2,6 +2,7 @@
 
 install: # Install dependencies after first cloning or deleting node_modules
 		npm ci
+		npm link
 
 brain-games: # Launch brain-games.js file
 		node bin/brain-games.js
