@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import greeting from '../src/cli.js';
+import GamePlay from '../src/index.js';
 
 const evenCheck = (num) => {
   if (num % 2 === 0) {
@@ -11,4 +10,15 @@ const evenCheck = (num) => {
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 const arrayForfuncResult = [];
-const randNumber1 = Math.floor(Math.random() * 100);
+const arrayForQuestionRepr = [];
+for (let i = 0; i < 3; i += 1) {
+  const randNumber = Math.floor(Math.random() * 100);
+  const funcResult = evenCheck(randNumber);
+  const questionRepr = `${randNumber}`;
+  arrayForfuncResult.push(funcResult);
+  arrayForQuestionRepr.push(questionRepr);
+}
+console.log(arrayForfuncResult);
+console.log(arrayForQuestionRepr);
+
+console.log(GamePlay(arrayForfuncResult, arrayForQuestionRepr, question));
