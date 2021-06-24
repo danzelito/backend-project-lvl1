@@ -14,7 +14,7 @@ const GamePlay = (funcresult, questionrepr, question) => {
       console.log('Correct!');
       count += 1;
     } else {
-      console.log(`'${userguess}' is wrong answer ;(. Correct answer was '${funcresult[count]}'.`)
+      console.log(`'${userguess}' is wrong answer ;(. Correct answer was '${funcresult[count]}'.`);
       return `Let's try again, ${userName[0].toUpperCase()}${userName.slice(1)}!`;
     }
   }

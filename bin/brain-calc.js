@@ -5,7 +5,6 @@ const sumCheck = (a, b) => a + b;
 const diffCheck = (c, d) => c - d;
 const mulCheck = (e, f) => e * f;
 
-
 const question = 'What is the result of the expression?';
 const arrayForfuncResult = [];
 const arrayForQuestionRepr = [];
