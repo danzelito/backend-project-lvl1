@@ -16,8 +16,8 @@ const BrainGCDGame = () => {
   const arrayForfuncResult = [];
   const arrayForQuestionRepr = [];
   for (let i = 0; i < 3; i += 1) {
-    const randNumber1 = Math.floor(Math.random() * 100);
-    const randNumber2 = Math.floor(Math.random() * 100);
+    const randNumber1 = Math.floor(Math.random() * 98) + 2;
+    const randNumber2 = Math.floor(Math.random() * 98) + 2;
     const funcResult = Dividers(randNumber1, randNumber2);
     const questionRepr = `${randNumber1} ${randNumber2}`;
     arrayForfuncResult.push(funcResult);
