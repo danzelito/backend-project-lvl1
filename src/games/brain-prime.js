@@ -2,7 +2,7 @@ import GamePlay from '../index.js';
 
 const primeCheck = (num) => {
   let divider = 2;
-  if (num === 1) {
+  if (num <= 1) {
     return 'no';
   }
   if (num === 2) {
